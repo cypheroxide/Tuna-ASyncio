@@ -14,6 +14,11 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 
+# You can use local models using Ollama. See https://ollama.com/ for installation instructions and download your first model.
+# Then, run the ollama_api_gen.py script to generate the Ollama REST API for Ollama at http://localhost:11434/api
+OLLAMA_API_ENDPOInT = "http://localhost:11434/api"
+
+
 class TokenBucket:
     """
     This class implements the token bucket algorithm which helps in rate limiting.
